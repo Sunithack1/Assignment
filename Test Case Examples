@@ -1,0 +1,7 @@
+Sample Test Cases
+
+
+1. Validate using Karma, Jasmine that garbage characters are not accepted.
+2. Validate to ensure blank input is not accepted.
+3. Validate to ensure security measures are incorpotaed.
+4. validate to ensure all 26 coordinates are displayed correctly.
