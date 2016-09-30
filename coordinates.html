@@ -1,0 +1,15 @@
+<!DOctype html>
+<html>
+<head>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src = "coordinates.js"></script>
+</head>
+<body ng-app = "coordinateApp" ng-controller = "coordinateCtrl">
+<p> Enter x coordinate: <input type = "number" ng-model = "x"></p>
+<p> Enter y coordinate: <input type = "number" ng-model = "y"></p>
+<button type = "button", ng-click = "nearToFarCoordinates()"> Submit </button>
+<p> Nearest Coordinate to the origin </p>
+<div ng-repeat = "coord in coordinatesArray1 | orderBy : 'distance'"> {{coord.value}} </div>
+<p>Farthest Coordinate to the origin </p>
+</body>
+</html>
